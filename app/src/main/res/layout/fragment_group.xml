@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.GroupFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/listGroups"
+        android:layout_width="match_parent"
+        android:layout_height="561dp"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginTop="4dp"
+        android:layout_weight="2"
+        android:divider="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddGhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:text="Add Chat Room "
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/txtAddChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="Type Chatroom Name Here!"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorPrimaryDark" />
+    </LinearLayout>
+</RelativeLayout>

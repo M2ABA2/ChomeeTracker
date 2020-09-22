@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas. android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.makoele.chomeetracker.Fragments.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/user_profile"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsername"
+        android:hint="Name"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_purple"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/profile_image" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtUsername"
+        android:gravity="center"
+        android:text="@string/group_code_creation"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtView"
+        android:text="Save this invite code. Your friend will need it to join your circle"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/txtGroupName"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtView2"
+        android:layout_alignStart="@+id/profile_image"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-90dp"
+        android:hint="Your Group Name"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+
+    <EditText
+        android:id="@+id/txtCode"
+        android:inputType="number"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGroupName"
+        android:layout_alignStart="@+id/profile_image"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-90dp"
+        android:hint="Type your code here!"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btnCreateGroup"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCode"
+        android:layout_alignStart="@+id/profile_image"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-89dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/colorAccent"
+        android:text="Create Group"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

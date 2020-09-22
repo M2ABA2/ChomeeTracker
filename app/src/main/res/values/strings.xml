@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Chomee Tracker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">1123906121137806</string>
+    <string name="fb_login_protocol_scheme">fb1123906121137806</string>
+
+    <string name="register">Click Here to Register </string>
+    <!-- Location enabled string -->
+    <string name="refresh">Refresh</string>
+
+    <string name="fetch_location">Fetch Location </string>
+    <string name="profile">Profile</string>
+    <string name="track_location">Track Location</string>
+    <string name="share_location">Share Location</string>
+    <string name="image_satelit">Satelit</string>
+    <string name="start_tracking">Show in Map </string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="hint_email">Email</string>
+    <string name="error_user_exists">User already exists, click the option to reset your password</string>
+    <string name="error_invalid_email">Your Email is invalid, please check it carefully</string>
+    <string name="error_weak_password">Your password is too weak, please try to make it stronger</string>
+
+    <string name="group_code_creation">Create a 6 digit Group Code. This code will be used by friends to enter your group. Remember it!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_messenger">Messenger</string>
+
+    <string name="tracking_enabled_notif">Tracking is currently enabled. Tap to cancel.</string>
+    <string name="test_email">test@test.com</string>
+    <string name="test_password">testpassword</string>
+    <string name="firebase_path">location</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
